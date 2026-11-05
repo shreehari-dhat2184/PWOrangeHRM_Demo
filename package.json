@@ -1,0 +1,21 @@
+{
+  "name": "orangehrm-playwright",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright end-to-end automation for OrangeHRM demo",
+  "scripts": {
+    "test": "playwright test",
+    "test:ci": "playwright test --workers=1",
+    "test:headed": "HEADED=1 playwright test",
+    "test:chromium": "BROWSERS=chromium playwright test",
+    "test:firefox": "BROWSERS=firefox playwright test",
+    "test:webkit": "BROWSERS=webkit playwright test",
+    "test:ui": "playwright test --ui",
+    "test:debug": "PWDEBUG=1 playwright test",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "dotenv": "^16.4.5"
+  }
+}
